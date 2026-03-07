@@ -56,7 +56,7 @@ The Marketing department has 5 new employees joining the team. Each employee nee
    ![Screenshot](Getent_group_marketing.png)
 3. **Verified group marketing using getent**
    `getent group marketing`
-   ![Screenshot](Using getent command -Marketing.png)
+   ![Screenshot](Getent_group_marketing.png)
 5. **Verified all files created in their respective directories (use ls -l)**
     `ls -l /home/shared/marketing/`
    ![Screenshot](Using ls -l command for all files created in respective directories -Marketing.png)

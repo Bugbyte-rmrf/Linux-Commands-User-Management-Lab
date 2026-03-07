@@ -53,7 +53,7 @@ The Marketing department has 5 new employees joining the team. Each employee nee
 ## Deliverables-
 1. **Verified all users created using cat**
    `cat /etc/passwd`
-   ![Screenshot](Using cat passwd command -Marketing.png)
+   ![Screenshot](Catpasswordcommand-Marketing.png)
 3. **Verified group marketing using getent**
    `getent group marketing`
    ![Screenshot](Using getent command -Marketing.png)

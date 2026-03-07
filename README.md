@@ -53,16 +53,16 @@ The Marketing department has 5 new employees joining the team. Each employee nee
 ## Deliverables-
 1. **Verified all users created using cat**
    `cat /etc/passwd`
-   ![Screenshot](link-to-your-image.png)
+   ![Screenshot](Using cat passwd command -Marketing.png)
 3. **Verified group marketing using getent**
    `getent group marketing`
-   ![Screenshot](link-to-your-image.png)
+   ![Screenshot](Using getent command -Marketing.png)
 5. **Verified all files created in their respective directories (use ls -l)**
     `ls -l /home/shared/marketing/`
-   ![Screenshot](link-to-your-image.png)
+   ![Screenshot](Using ls -l command for all files created in respective directories -Marketing.png)
 7. **Verified correct permissions set on all files (use ls -l to show permission strings)**
     `ls -l /home/shared/marketing/` 
-   ![Screenshot](link-to-your-image.png)
+   ![Screenshot](Using ls -l command for correct permissions set for all files  -Marketing.png)
 
 ## Key Observations / Lessons Learned
 * I learned that even though the files are under a common directory (/home/shared/marketing/), setting group and other permissions to zero ensures that Alice cannot read Bob's report, and Carol cannot modify Emma's. 

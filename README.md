@@ -16,22 +16,39 @@ The Marketing department has 5 new employees joining the team. Each employee nee
 
 ## Step-by-Step Process & Commands Executed - 
 1. **Created a new group:**
+
    `sudo groupadd marketing`
+   
 2. **Created 5 users with the following usernames: alice_m, bob_m, carol_m, david_m, emma_m**
+
    `sudo adduser alice_m`
+
    `sudo adduser bob_m`
+
    `sudo adduser carol_m`
-   `sudo adduser david_m`
+
+    `sudo adduser david_m`
+
    `sudo adduser emma_m`
+   
 3. **Added 5 users to the group**
+   
    `sudo usermod -aG marketing alice_m`
+
    `sudo useradd -aG marketing bob_m`
+
    `sudo useradd -aG marketing carol_m`
+
    `sudo useradd -aG marketing david_m`
+
    `sudo useradd -aG marketing emma_m`
+   
 4. **Set up the shared directory:**
+   
    `sudo mkdir -p /home/shared/marketing`
+   
 5(a). **Created a personal file for each user in /home/shared/marketing/: i.e alice_m → alice_report.txt**
+
    `sudo touch /home/shared/marketing/alice_report.txt`
    `sudo touch /home/shared/marketing/bob_report.txt`
    `sudo touch /home/shared/marketing/carol_report.txt`
@@ -43,7 +60,7 @@ The Marketing department has 5 new employees joining the team. Each employee nee
    `sudo chown carol_m:marketing /home/shared/marketing/carol_report.txt`
    `sudo chown david_m:marketing /home/shared/marketing/david_report.txt`
    `sudo chown emma_m:marketing /home/shared/marketing/emma_report.txt`
-6. **Set permissions to {700}**
+9. **Set permissions to {700}**
    `sudo chmod 700 /home/shared/marketing/alice_report.txt`
    `sudo chmod 700 /home/shared/marketing/bob_report.txt`
    `sudo chmod 700 /home/shared/marketing/carol_report.txt`

@@ -158,11 +158,12 @@ The IT department needs a collaborative workspace where all team members can wor
    `sudo touch /home/shared/itdept/project_specs.txt`
    
 6. **Set ownership and permissions**
-(a). **Changed the ownership so the itdept group owns the file**
+ (a). **Changed the ownership so the itdept group owns the file**
 
    `sudo chown :itdept /home/shared/itdept/project_specs.txt`
    
-(b). **Set permissions to {770}**
+  (b). **Set permissions to {770}**
+  
    `sudo chmod 770 /home/shared/itdept/project_specs.txt`
    
 ## Deliverables-
@@ -170,25 +171,25 @@ The IT department needs a collaborative workspace where all team members can wor
    
    `cat /etc/passwd`
    
-   ![Screenshot](link-to-your-image.png)
+   ![Screenshot](Results_using_cat_passwd_ITDept)
    
 2. **Verified group marketing using getent**
    
    `getent group itdept`
    
-   ![Screenshot](link-to-your-image.png)
+   ![Screenshot](Using_getent_command_ITDept)
    
 3. **Verified all files created in their respective directories (use ls -l)**
    
     `ls -l /home/shared/itdept/`
    
-   ![Screenshot](link-to-your-image.png)
+   ![Screenshot](Using_ls-l_command_for_files_created_in_respective_directories_ITDept)
    
-4. **Verified correct permissions set on all files (use ls -l to show permission strings)**
+5. **Verified correct permissions set on all files (use ls -l to show permission strings)**
    
      `ls -l /home/shared/itdept/`
    
-   ![Screenshot](link-to-your-image.png)
+   ![Screenshot](Using_ls-l_command_for_correct_permissions_set_for_files_ITDept)
 
 ## Key Observations / Lessons Learned
 * I learned that instead of assigning file permissions to Frank, Grace, Henry, Iris, and Jack individually, adding them to an itdept group centralizes control. If a team member leaves or joins, you only need to update the group membership, rather than modifying file permissions across the system.

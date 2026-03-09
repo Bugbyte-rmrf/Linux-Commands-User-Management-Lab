@@ -173,7 +173,7 @@ The IT department needs a collaborative workspace where all team members can wor
 
 ## Results of Step by Step Process and Commands Executed
    
-![Results Report](Results_of_Step_by_Step_Process_&_Commands_Executed.png) 
+![Results Report](Results_of_Step_by_Step_Process_&_Commands_Executed_ITDept.png) 
    
 ## Deliverables
 

@@ -89,25 +89,25 @@ The Marketing department has 5 new employees joining the team. Each employee nee
    
    `cat /etc/passwd`
    
-    ![Screenshot](Results_using_cat_passwd_Marketing)
+    ![Screenshot](Results_using_cat_passwd_Marketing.png)
    
 2. **Verified group marketing using getent**
    
    `getent group marketing`
    
-    ![Screenshot](Using_getent_command_Marketing)
+    ![Screenshot](Using_getent_command_Marketing.png)
    
 3. **Verified all files created in their respective directories (use ls -l)**
    
     `ls -l /home/shared/marketing/`
    
-     ![Screenshot](Using_ls-l_command_for_files_created_in_respective_directories_Marketing)
+     ![Screenshot](Using_ls-l_command_for_files_created_in_respective_directories_Marketing.png)
    
 4. **Verified correct permissions set on all files (use ls -l to show permission strings)**
    
     `ls -l /home/shared/marketing/`
    
-     ![Screenshot](Using_ls-l_command_for_correct_permissions_set_for_files_Marketing)
+     ![Screenshot](Using_ls-l_command_for_correct_permissions_set_for_files_Marketing.png)
 
 ## Key Observations / Lessons Learned
 * I learned that even though the files are under a common directory (/home/shared/marketing/), setting group and other permissions to zero ensures that Alice cannot read Bob's report, and Carol cannot modify Emma's.

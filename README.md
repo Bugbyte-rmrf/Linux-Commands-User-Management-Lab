@@ -171,7 +171,7 @@ The IT department needs a collaborative workspace where all team members can wor
    
    `cat /etc/passwd`
    
-   ![Screenshot](Results_using_cat_passwd_ITDept)
+   ![Screenshot](Results_using_cat_passwd_ITDept.png)
    
 2. **Verified group marketing using getent**
    

@@ -49,7 +49,7 @@ The Marketing department has 5 new employees joining the team. Each employee nee
    
 5(a). **Created a personal file for each user in /home/shared/marketing/: i.e alice_m → alice_report.txt**
 
-   `sudo touch /home/shared/marketing/alice_report.txt`
+    `sudo touch /home/shared/marketing/alice_report.txt`
    
    `sudo touch /home/shared/marketing/bob_report.txt`
    

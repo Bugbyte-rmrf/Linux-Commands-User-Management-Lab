@@ -47,7 +47,7 @@ The Marketing department has 5 new employees joining the team. Each employee nee
    
    `sudo mkdir -p /home/shared/marketing`
    
-5(a). **Created a personal file for each user in /home/shared/marketing/: i.e alice_m → alice_report.txt**
+ 5(a). **Created a personal file for each user in /home/shared/marketing/: i.e alice_m → alice_report.txt**
 
    `sudo touch /home/shared/marketing/alice_report.txt`
    
@@ -59,7 +59,7 @@ The Marketing department has 5 new employees joining the team. Each employee nee
    
    `sudo touch /home/shared/marketing/emma_report.txt`
    
- (b). **Created the assigned ownership of personal file.(Each user will be the owner of the corresponding file)**
+  (b). **Created the assigned ownership of personal file.(Each user will be the owner of the corresponding file)**
  
    `sudo chown alice_m:marketing /home/shared/marketing/alice_report.txt`
    

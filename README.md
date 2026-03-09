@@ -89,7 +89,7 @@ The Marketing department has 5 new employees joining the team. Each employee nee
    
    `cat /etc/passwd`
    
-   ![Screenshot](Results_using_cat passwd_marketing)
+   ![Screenshot](Results_using_cat_passwd_Marketing)
    
 2. **Verified group marketing using getent**
    
@@ -107,12 +107,12 @@ The Marketing department has 5 new employees joining the team. Each employee nee
    
     `ls -l /home/shared/marketing/`
    
-   ![Screenshot](Using_ls -l_command_for_correct_permissions_set for_files_Marketing)
+   ![Screenshot](Using_ls-l_command_for_correct_permissions_set_for_files_Marketing)
 
 ## Key Observations / Lessons Learned
 * I learned that even though the files are under a common directory (/home/shared/marketing/), setting group and other permissions to zero ensures that Alice cannot read Bob's report, and Carol cannot modify Emma's. 
 * I learned that when a system administrator (usually root) creates files on behalf of users, the files are initially owned by the root.
-*Using the chown command, it hands over ownership to the respective employees. Without this step, the 700 permissions would lock the employees out of their own files.
+* Using the chown command, it hands over ownership to the respective employees. Without this step, the 700 permissions would lock the employees out of their own files.
 
   
 ## Part 2: IT Department (Shared Group File)
@@ -120,26 +120,46 @@ The IT department needs a collaborative workspace where all team members can wor
 
 ## Step-by-Step Process & Commands Executed - 
 1. **Created a new group:**
+   
    `sudo groupadd itdept`
+   
 2. **Created 5 users with the following usernames: frank_it, grace_it, henry_it, iris_it, jack_it**
+   
    `sudo adduser frank_it`
+   
    `sudo adduser grace_it`
+   
    `sudo adduser henry_it`
+   
    `sudo adduser iris_it`
+   
    `sudo adduser jack_it`
+   
 3. **Added 5 users to the group**
+   
    `sudo usermod -aG itdept frank_it`
+   
    `sudo useradd -aG itdept grace_it`
+   
    `sudo useradd -aG itdept henry_it`
+   
    `sudo useradd -aG itdept iris_it`
+   
    `sudo useradd -aG itdept jack_it`
+   
 4. **Set up the shared directory:**
+   
    `sudo mkdir -p /home/shared/itdept`
+   
 5. **Created one shared file in /home/shared/itdept/:i.e project_specs.txt**
+   
    `sudo touch /home/shared/itdept/project_specs.txt`
+   
 6. **Set ownership and permissions**
 (a). **Changed the ownership so the itdept group owns the file**
+
    `sudo chown :itdept /home/shared/itdept/project_specs.txt`
+   
 (b). **Set permissions to {770}**
    `sudo chmod 770 /home/shared/itdept/project_specs.txt`
    

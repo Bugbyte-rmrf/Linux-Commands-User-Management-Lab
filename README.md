@@ -50,35 +50,63 @@ The Marketing department has 5 new employees joining the team. Each employee nee
 5(a). **Created a personal file for each user in /home/shared/marketing/: i.e alice_m → alice_report.txt**
 
    `sudo touch /home/shared/marketing/alice_report.txt`
+   
    `sudo touch /home/shared/marketing/bob_report.txt`
+   
    `sudo touch /home/shared/marketing/carol_report.txt`
+   
    `sudo touch /home/shared/marketing/david_report.txt`
+   
    `sudo touch /home/shared/marketing/emma_report.txt`
+   
  (b). **Created the assigned ownership of personal file.(Each user will be the owner of the corresponding file)**
+ 
    `sudo chown alice_m:marketing /home/shared/marketing/alice_report.txt`
+   
    `sudo chown bob_m:marketing /home/shared/marketing/bob_report.txt`
+   
    `sudo chown carol_m:marketing /home/shared/marketing/carol_report.txt`
+   
    `sudo chown david_m:marketing /home/shared/marketing/david_report.txt`
+   
    `sudo chown emma_m:marketing /home/shared/marketing/emma_report.txt`
-9. **Set permissions to {700}**
+   
+6. **Set permissions to {700}**
+   
    `sudo chmod 700 /home/shared/marketing/alice_report.txt`
+   
    `sudo chmod 700 /home/shared/marketing/bob_report.txt`
+   
    `sudo chmod 700 /home/shared/marketing/carol_report.txt`
+   
    `sudo chmod 700 /home/shared/marketing/david_report.txt`
+   
    `sudo chmod 700 /home/shared/marketing/emma_report.txt`
    
 ## Deliverables-
+
 1. **Verified all users created using cat**
+   
    `cat /etc/passwd`
+   
    ![Screenshot]()
-3. **Verified group marketing using getent**
+   
+2. **Verified group marketing using getent**
+   
    `getent group marketing`
+   
    ![Screenshot]()
-5. **Verified all files created in their respective directories (use ls -l)**
+   
+3. **Verified all files created in their respective directories (use ls -l)**
+   
     `ls -l /home/shared/marketing/`
+   
    ![Screenshot](Using ls -l command for all files created in respective directories -Marketing.png)
-7. **Verified correct permissions set on all files (use ls -l to show permission strings)**
-    `ls -l /home/shared/marketing/` 
+   
+4. **Verified correct permissions set on all files (use ls -l to show permission strings)**
+   
+    `ls -l /home/shared/marketing/`
+   
    ![Screenshot](Using ls -l command for correct permissions set for all files  -Marketing.png)
 
 ## Key Observations / Lessons Learned

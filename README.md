@@ -14,7 +14,7 @@ You are the system administrator for TechCorp Solutions, a growing technology co
 ## Part 1: Marketing Department (Individual User Files)
 The Marketing department has 5 new employees joining the team. Each employee needs their own workspace with private files that only they can access.
 
-## Step-by-Step Process & Commands Executed - 
+## Step-by-Step Process & Commands Executed 
 1. **Created a new group:**
 
    `sudo groupadd marketing`
@@ -83,7 +83,7 @@ The Marketing department has 5 new employees joining the team. Each employee nee
    
     `sudo chmod 700 /home/shared/marketing/emma_report.txt`
 
-7. **Results of Step by Step Process and Commands Executed**
+## Results of Step by Step Process and Commands Executed
    
    ![Results Report](Results_of_Step_by_Step_Process_&_Commands_Executed.png)   
    

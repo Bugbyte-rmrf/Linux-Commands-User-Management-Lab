@@ -162,15 +162,17 @@ The IT department needs a collaborative workspace where all team members can wor
    `sudo touch /home/shared/itdept/project_specs.txt`
    
 6. **Set ownership and permissions**
- (a). **Changed the ownership so the itdept group owns the file**
+   
+ (a).**Changed the ownership so the itdept group owns the file**
 
    `sudo chown :itdept /home/shared/itdept/project_specs.txt`
    
-  (b). **Set permissions to {770}**
+  (b).**Set permissions to {770}**
   
    `sudo chmod 770 /home/shared/itdept/project_specs.txt`
    
 ## Deliverables-
+
 1. **Verified all users created using cat**
    
    `cat /etc/passwd`

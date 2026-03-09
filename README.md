@@ -87,7 +87,7 @@ The Marketing department has 5 new employees joining the team. Each employee nee
    
    ![Results Report](Results_of_Step_by_Step_Process_&_Commands_Executed.png)   
    
-## Deliverables-
+## Deliverables
 
 1. **Verified all users created using cat**
    
@@ -124,7 +124,7 @@ The Marketing department has 5 new employees joining the team. Each employee nee
 ## Part 2: IT Department (Shared Group File)
 The IT department needs a collaborative workspace where all team members can work on a shared project file together. 
 
-## Step-by-Step Process & Commands Executed - 
+## Step-by-Step Process & Commands Executed 
 1. **Created a new group:**
    
    `sudo groupadd itdept`
@@ -145,13 +145,13 @@ The IT department needs a collaborative workspace where all team members can wor
    
    `sudo usermod -aG itdept frank_it`
    
-   `sudo useradd -aG itdept grace_it`
+   `sudo usermod -aG itdept grace_it`
    
-   `sudo useradd -aG itdept henry_it`
+   `sudo usermod -aG itdept henry_it`
    
-   `sudo useradd -aG itdept iris_it`
+   `sudo usermod -aG itdept iris_it`
    
-   `sudo useradd -aG itdept jack_it`
+   `sudo usermod -aG itdept jack_it`
    
 4. **Set up the shared directory:**
    
@@ -167,11 +167,15 @@ The IT department needs a collaborative workspace where all team members can wor
 
    `sudo chown :itdept /home/shared/itdept/project_specs.txt`
    
-  (b).**Set permissions to {770}**
+ (b).**Set permissions to {770}**
   
    `sudo chmod 770 /home/shared/itdept/project_specs.txt`
+
+## Results of Step by Step Process and Commands Executed
    
-## Deliverables-
+![Results Report](Results_of_Step_by_Step_Process_&_Commands_Executed.png) 
+   
+## Deliverables
 
 1. **Verified all users created using cat**
    
@@ -198,6 +202,7 @@ The IT department needs a collaborative workspace where all team members can wor
    ![Screenshot](Using_ls-l_command_for_correct_permissions_set_for_files_ITDept.png)
 
 ## Key Observations / Lessons Learned
+
 * I learned that instead of assigning file permissions to Frank, Grace, Henry, Iris, and Jack individually, adding them to an itdept group centralizes control. If a team member leaves or joins, you only need to update the group membership, rather than modifying file permissions across the system.
   
 * I learned that users will not be able to access the file if they don't have the correct permissions on the parent directories.

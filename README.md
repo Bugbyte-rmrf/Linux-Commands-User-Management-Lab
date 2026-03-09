@@ -101,7 +101,7 @@ The Marketing department has 5 new employees joining the team. Each employee nee
    
     `ls -l /home/shared/marketing/`
    
-     ![Screenshot](Using_ls-l_command_for_files_created_in_respective_directories_Marketing.pn)
+     ![Screenshot](Using_ls-l_command_for_correct_permissions_set_for_files_Marketing.png)
    
 4. **Verified correct permissions set on all files (use ls -l to show permission strings)**
    

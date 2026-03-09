@@ -27,7 +27,7 @@ The Marketing department has 5 new employees joining the team. Each employee nee
 
    `sudo adduser carol_m`
 
-    `sudo adduser david_m`
+   `sudo adduser david_m`
 
    `sudo adduser emma_m`
    
@@ -35,13 +35,13 @@ The Marketing department has 5 new employees joining the team. Each employee nee
    
    `sudo usermod -aG marketing alice_m`
 
-   `sudo useradd -aG marketing bob_m`
+   `sudo usermod -aG marketing bob_m`
 
-   `sudo useradd -aG marketing carol_m`
+   `sudo usermod -aG marketing carol_m`
 
-   `sudo useradd -aG marketing david_m`
+   `sudo usermod -aG marketing david_m`
 
-   `sudo useradd -aG marketing emma_m`
+   `sudo usermod -aG marketing emma_m`
    
 4. **Set up the shared directory:**
    
@@ -49,7 +49,7 @@ The Marketing department has 5 new employees joining the team. Each employee nee
    
 5(a). **Created a personal file for each user in /home/shared/marketing/: i.e alice_m → alice_report.txt**
 
-    `sudo touch /home/shared/marketing/alice_report.txt`
+   `sudo touch /home/shared/marketing/alice_report.txt`
    
    `sudo touch /home/shared/marketing/bob_report.txt`
    
@@ -82,6 +82,9 @@ The Marketing department has 5 new employees joining the team. Each employee nee
     `sudo chmod 700 /home/shared/marketing/david_report.txt`
    
     `sudo chmod 700 /home/shared/marketing/emma_report.txt`
+
+   7. **Results of Step by Step Process and Commands Executed**
+    [Click here to view my Full Results Report (PDF)](Results_of_Step_by_Step_Process_&_Commands_Executed.pdf)   
    
 ## Deliverables-
 

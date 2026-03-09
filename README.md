@@ -110,8 +110,10 @@ The Marketing department has 5 new employees joining the team. Each employee nee
    ![Screenshot](Using_ls-l_command_for_correct_permissions_set_for_files_Marketing)
 
 ## Key Observations / Lessons Learned
-* I learned that even though the files are under a common directory (/home/shared/marketing/), setting group and other permissions to zero ensures that Alice cannot read Bob's report, and Carol cannot modify Emma's. 
+* I learned that even though the files are under a common directory (/home/shared/marketing/), setting group and other permissions to zero ensures that Alice cannot read Bob's report, and Carol cannot modify Emma's.
+   
 * I learned that when a system administrator (usually root) creates files on behalf of users, the files are initially owned by the root.
+  
 * Using the chown command, it hands over ownership to the respective employees. Without this step, the 700 permissions would lock the employees out of their own files.
 
   
@@ -165,21 +167,34 @@ The IT department needs a collaborative workspace where all team members can wor
    
 ## Deliverables-
 1. **Verified all users created using cat**
+   
    `cat /etc/passwd`
+   
    ![Screenshot](link-to-your-image.png)
-3. **Verified group marketing using getent**
+   
+2. **Verified group marketing using getent**
+   
    `getent group itdept`
+   
    ![Screenshot](link-to-your-image.png)
-5. **Verified all files created in their respective directories (use ls -l)**
+   
+3. **Verified all files created in their respective directories (use ls -l)**
+   
     `ls -l /home/shared/itdept/`
+   
    ![Screenshot](link-to-your-image.png)
-7. **Verified correct permissions set on all files (use ls -l to show permission strings)**
+   
+4. **Verified correct permissions set on all files (use ls -l to show permission strings)**
+   
      `ls -l /home/shared/itdept/`
+   
    ![Screenshot](link-to-your-image.png)
 
 ## Key Observations / Lessons Learned
 * I learned that instead of assigning file permissions to Frank, Grace, Henry, Iris, and Jack individually, adding them to an itdept group centralizes control. If a team member leaves or joins, you only need to update the group membership, rather than modifying file permissions across the system.
+  
 * I learned that users will not be able to access the file if they don't have the correct permissions on the parent directories.
+  
 * Setting the permission of others to zero demonstrates the principle of least privilege. Project specifications are very sensitive, and denying access to anyone outside the itdept group prevents unauthorized viewing or tampering by other users on the system.
 
    

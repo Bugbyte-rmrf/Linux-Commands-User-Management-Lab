@@ -49,39 +49,39 @@ The Marketing department has 5 new employees joining the team. Each employee nee
    
 5(a). **Created a personal file for each user in /home/shared/marketing/: i.e alice_m → alice_report.txt**
 
-   `sudo touch /home/shared/marketing/alice_report.txt`
+     `sudo touch /home/shared/marketing/alice_report.txt`
    
-   `sudo touch /home/shared/marketing/bob_report.txt`
+     `sudo touch /home/shared/marketing/bob_report.txt`
    
-   `sudo touch /home/shared/marketing/carol_report.txt`
+     `sudo touch /home/shared/marketing/carol_report.txt`
    
-   `sudo touch /home/shared/marketing/david_report.txt`
+     `sudo touch /home/shared/marketing/david_report.txt`
    
-   `sudo touch /home/shared/marketing/emma_report.txt`
+     `sudo touch /home/shared/marketing/emma_report.txt`
    
  (b). **Created the assigned ownership of personal file.(Each user will be the owner of the corresponding file)**
  
-   `sudo chown alice_m:marketing /home/shared/marketing/alice_report.txt`
+     `sudo chown alice_m:marketing /home/shared/marketing/alice_report.txt`
    
-   `sudo chown bob_m:marketing /home/shared/marketing/bob_report.txt`
+     `sudo chown bob_m:marketing /home/shared/marketing/bob_report.txt`
    
-   `sudo chown carol_m:marketing /home/shared/marketing/carol_report.txt`
+     `sudo chown carol_m:marketing /home/shared/marketing/carol_report.txt`
    
-   `sudo chown david_m:marketing /home/shared/marketing/david_report.txt`
+     `sudo chown david_m:marketing /home/shared/marketing/david_report.txt`
    
-   `sudo chown emma_m:marketing /home/shared/marketing/emma_report.txt`
+     `sudo chown emma_m:marketing /home/shared/marketing/emma_report.txt`
    
 6. **Set permissions to {700}**
    
-   `sudo chmod 700 /home/shared/marketing/alice_report.txt`
+     `sudo chmod 700 /home/shared/marketing/alice_report.txt`
    
-   `sudo chmod 700 /home/shared/marketing/bob_report.txt`
+     `sudo chmod 700 /home/shared/marketing/bob_report.txt`
    
-   `sudo chmod 700 /home/shared/marketing/carol_report.txt`
+     `sudo chmod 700 /home/shared/marketing/carol_report.txt`
    
-   `sudo chmod 700 /home/shared/marketing/david_report.txt`
+     `sudo chmod 700 /home/shared/marketing/david_report.txt`
    
-   `sudo chmod 700 /home/shared/marketing/emma_report.txt`
+     `sudo chmod 700 /home/shared/marketing/emma_report.txt`
    
 ## Deliverables-
 
@@ -89,25 +89,25 @@ The Marketing department has 5 new employees joining the team. Each employee nee
    
    `cat /etc/passwd`
    
-   ![Screenshot]()
+   ![Screenshot](Results_using_cat passwd_marketing)
    
 2. **Verified group marketing using getent**
    
    `getent group marketing`
    
-   ![Screenshot]()
+    ![Screenshot](Using_getent_command_Marketing)
    
 3. **Verified all files created in their respective directories (use ls -l)**
    
     `ls -l /home/shared/marketing/`
    
-   ![Screenshot](Using ls -l command for all files created in respective directories -Marketing.png)
+     ![Screenshot](Using_ls-l_command_for_files_created_in_respective_directories_Marketing)
    
 4. **Verified correct permissions set on all files (use ls -l to show permission strings)**
    
     `ls -l /home/shared/marketing/`
    
-   ![Screenshot](Using ls -l command for correct permissions set for all files  -Marketing.png)
+   ![Screenshot](Using_ls -l_command_for_correct_permissions_set for_files_Marketing)
 
 ## Key Observations / Lessons Learned
 * I learned that even though the files are under a common directory (/home/shared/marketing/), setting group and other permissions to zero ensures that Alice cannot read Bob's report, and Carol cannot modify Emma's. 

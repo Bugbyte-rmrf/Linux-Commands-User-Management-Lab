@@ -177,19 +177,19 @@ The IT department needs a collaborative workspace where all team members can wor
    
    `getent group itdept`
    
-   ![Screenshot](Using_getent_command_ITDept)
+   ![Screenshot](Using_getent_command_ITDept.png)
    
 3. **Verified all files created in their respective directories (use ls -l)**
    
     `ls -l /home/shared/itdept/`
    
-   ![Screenshot](Using_ls-l_command_for_files_created_in_respective_directories_ITDept)
+   ![Screenshot](Using_ls-l_command_for_files_created_in_respective_directories_ITDept.png)
    
 5. **Verified correct permissions set on all files (use ls -l to show permission strings)**
    
      `ls -l /home/shared/itdept/`
    
-   ![Screenshot](Using_ls-l_command_for_correct_permissions_set_for_files_ITDept)
+   ![Screenshot](Using_ls-l_command_for_correct_permissions_set_for_files_ITDept.png)
 
 ## Key Observations / Lessons Learned
 * I learned that instead of assigning file permissions to Frank, Grace, Henry, Iris, and Jack individually, adding them to an itdept group centralizes control. If a team member leaves or joins, you only need to update the group membership, rather than modifying file permissions across the system.

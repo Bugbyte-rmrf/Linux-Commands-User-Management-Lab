@@ -85,7 +85,7 @@ The Marketing department has 5 new employees joining the team. Each employee nee
 
 7. **Results of Step by Step Process and Commands Executed**
    
-    [Click here to view Results Report (png)](Results_of_Step_by_Step_Process_&_Commands_Executed.png)   
+   ![Results Report](Results_of_Step_by_Step_Process_&_Commands_Executed.png)   
    
 ## Deliverables-
 

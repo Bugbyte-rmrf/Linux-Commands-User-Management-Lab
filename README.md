@@ -83,7 +83,8 @@ The Marketing department has 5 new employees joining the team. Each employee nee
    
     `sudo chmod 700 /home/shared/marketing/emma_report.txt`
 
-   7. **Results of Step by Step Process and Commands Executed**
+7. **Results of Step by Step Process and Commands Executed**
+   
     [Click here to view my Full Results Report (PDF)](Results_of_Step_by_Step_Process_&_Commands_Executed.pdf)   
    
 ## Deliverables-
